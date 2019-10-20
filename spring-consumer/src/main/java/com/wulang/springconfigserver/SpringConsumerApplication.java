@@ -1,6 +1,6 @@
-package com.wulang.springzuul;
+package com.wulang.springconfigserver;
 
-import com.wulang.springzuul.service.HelloService;
+import com.wulang.springconfigserver.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.wulang.springzuul;
+package com.wulang.springconfigserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

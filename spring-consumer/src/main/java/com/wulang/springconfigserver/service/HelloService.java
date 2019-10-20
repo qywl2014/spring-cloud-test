@@ -1,4 +1,4 @@
-package com.wulang.springzuul.service;
+package com.wulang.springconfigserver.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
