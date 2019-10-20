@@ -23,6 +23,6 @@ public class SpringFeignApplication {
 
     @RequestMapping("/hi")
     public String hi(){
-        return "feign:"+serviceHi.hi();
+        return "feign:"+serviceHi.hi("leo");
     }
 }

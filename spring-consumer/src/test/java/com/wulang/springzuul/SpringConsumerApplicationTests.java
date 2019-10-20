@@ -1,4 +1,4 @@
-package com.wulang.springconsumer;
+package com.wulang.springzuul;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
