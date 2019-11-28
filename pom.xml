@@ -17,4 +17,14 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+
+  <modules>
+    <module>spring-config-client</module>
+    <module>spring-config-server</module>
+    <module>spring-consumer</module>
+    <module>spring-eureka</module>
+    <module>spring-feign</module>
+    <module>spring-provider</module>
+    <module>spring-zuul</module>
+  </modules>
 </project>
