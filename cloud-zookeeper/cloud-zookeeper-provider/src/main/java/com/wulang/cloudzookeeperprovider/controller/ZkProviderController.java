@@ -8,6 +8,7 @@ public class ZkProviderController {
 
     @RequestMapping("/test")
     public String test(String message){
+        System.out.println(message);
         return "hi," + message;
     }
 }
