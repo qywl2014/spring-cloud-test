@@ -1,13 +1,13 @@
-package com.wulang.cloudnacosprovider;
+package com.wulang.nacosprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CloudNacosProviderApplication {
+public class NacosProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudNacosProviderApplication.class, args);
+        SpringApplication.run(NacosProviderApplication.class, args);
     }
 
 }

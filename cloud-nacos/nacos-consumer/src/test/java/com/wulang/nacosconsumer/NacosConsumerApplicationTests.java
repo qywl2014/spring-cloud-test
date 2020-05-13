@@ -1,10 +1,10 @@
-package com.wulang.cloudnacosprovider;
+package com.wulang.nacosconsumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CloudNacosProviderApplicationTests {
+class NacosConsumerApplicationTests {
 
     @Test
     void contextLoads() {
