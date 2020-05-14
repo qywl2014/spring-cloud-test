@@ -9,9 +9,14 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class CloudZookeeperConsumerApplication {
 
+
     public static void main(String[] args) {
         SpringApplication.run(CloudZookeeperConsumerApplication.class, args);
     }
 
-
+    @Bean
+    @LoadBalanced
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
 }

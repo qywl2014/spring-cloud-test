@@ -7,4 +7,9 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>cloud-zookeeper</name>
+
+    <modules>
+        <module>nacos-provider</module>
+        <module>nacos-consumer</module>
+    </modules>
 </project>

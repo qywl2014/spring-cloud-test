@@ -7,4 +7,9 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <name>cloud-zookeeper</name>
+
+    <modules>
+        <module>cloud-zookeeper-provider</module>
+        <module>cloud-zookeeper-consumer</module>
+    </modules>
 </project>
