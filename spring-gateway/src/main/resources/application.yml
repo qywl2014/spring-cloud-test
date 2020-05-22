@@ -41,18 +41,26 @@ spring:
           enabled: true
           lowerCaseServiceId: true
           predicates:
-            Path='/'+serviceId+'/**'
-#          filters:
-#            RewritePath='/' + serviceId + '/(?<remaining>.*)', '/${remaining}'
+            - name: Path
+              args:
+                key1:
+                  a: "'/' + serviceId.replaceFirst(\"-\",\"/\") + '/**'"
+          filters:
+            - name: RewritePath
+              args:
+                regexp: "'/' + serviceId.replaceFirst(\"-\",\"/\") + '/(?<remaining>.*)'"
+                replacement: "'/${remaining}'"
 
-
-#          include-expression: false
 #          predicates:
-#            Path='/api/**'
+#            - Path='/' + serviceId.replaceFirst("-","/") + '/**'
 #          filters:
-#            RewritePath='/api/**/(?<remaining>.*)','$\{remaining}'
+#            - RewritePath='/' + serviceId.replaceFirst("-","/") + '/(?<remaining>.*)', '/${remaining}'
 
-      #          url-expression: "'lb://' + serviceId"
+#          predicates:
+#            - Path='/' + serviceId + '/**'
+#          filters:
+#            - RewritePath='/' + serviceId + '/(?<remaining>.*)', '/${remaining}'
+
       # 允许跨域
       globalcors:
         corsConfigurations:
@@ -69,8 +77,6 @@ spring:
           uri: localhost:7777
           predicates:
             - Path=/openplatform/**
-          filters:
-            - RewritePath='/' + serviceId + '/(?<remaininggg>.*)', '/${remaininggg}'
         - id:  api-admin
           uri: localhost:7777
           predicates:
